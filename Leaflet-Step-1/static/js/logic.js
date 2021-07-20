@@ -1,7 +1,7 @@
-// define the data url
+// Data url
 var earthquake_url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
-// define the cuntion of marker size
+// Funtion of marker size
 function markerSize(magnitude) {
     return magnitude * 4;
 };
@@ -35,17 +35,17 @@ d3.json(earthquake_url, function (geoJson) {
 // define the color function to assign the color to different maginitude
 function Color(magnitude) {
     if (magnitude > 5) {
-        return '#B233FF'
+        return "red"
     } else if (magnitude > 4) {
-        return '#FF4233'
+        return "yellow"
     } else if (magnitude > 3) {
-        return '#FF9C33'
+        return "blue"
     } else if (magnitude > 2) {
-        return '#FFCE33'
+        return "magenta"
     } else if (magnitude > 1) {
-        return '#FCFF33'
+        return "aqua"
     } else {
-        return '#8DFF33'
+        return "purple"
     }
 };
 // define the create map function
