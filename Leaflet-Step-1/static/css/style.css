@@ -23,7 +23,7 @@ html {
   text-align: center;
   font-size: 16px;
   margin: 2px 12px 8px;
-  color: #777;
+  color: black;
 }
 
 .legend span {
@@ -41,5 +41,5 @@ html {
 
 .legend i.icon {
   background-size: 18px;
-  background-color: rgb(211, 206, 206);
+  background-color:
 }

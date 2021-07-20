@@ -97,12 +97,12 @@ function createMap() {
     legend.onAdd = function(map) {
         var div = L.DomUtil.create("div", "legend");
         div.innerHTML += "<h4>Magnitude</h4>";
-        div.innerHTML += '<i style="background: #8DFF33"></i><span>0 - 1</span><br>';
-        div.innerHTML += '<i style="background: #FCFF33"></i><span>1 - 2</span><br>';
-        div.innerHTML += '<i style="background: #FFCE33"></i><span>2 - 3</span><br>';
-        div.innerHTML += '<i style="background: #FF9C33"></i><span>3 - 4</span><br>';
-        div.innerHTML += '<i style="background: #FF4233"></i><span>4 - 5</span><br>';
-        div.innerHTML += '<i style="background: #B233FF"></i><span>> 5</span><br>';  
+        div.innerHTML += '<i style="background: purple"></i><span>0 - 1</span><br>';
+        div.innerHTML += '<i style="background: aqua"></i><span>1 - 2</span><br>';
+        div.innerHTML += '<i style="background: magenta"></i><span>2 - 3</span><br>';
+        div.innerHTML += '<i style="background: blue"></i><span>3 - 4</span><br>';
+        div.innerHTML += '<i style="background: yellow"></i><span>4 - 5</span><br>';
+        div.innerHTML += '<i style="background: red"></i><span>> 5</span><br>';  
       
         return div;
       }
