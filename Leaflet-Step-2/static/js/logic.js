@@ -118,7 +118,7 @@ d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/
         div.innerHTML=legendInfo;
        
             labels.push(
-            "<li>Categories</li>"+"<br>"
+            "<li>Earthquakes Depths</li>"+"<br>"+"<br>"
             +"<li style=\"background-color:"+categories[0]+"\"></li>   "+"-10--10"+"<br>"
             +"<li style=\"background-color:"+categories[1]+"\"></li>  "+"10--30"+"<br>"
             +"<li style=\"background-color:"+categories[2]+"\"></li>  "+"30--50"+"<br>"
