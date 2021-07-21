@@ -8,22 +8,22 @@ d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/
         // set color of circle marker according to depths of earthquakes
         var color="";
         if(data.features[i].geometry.coordinates[2]>=90){
-            color="#FF0D0D";
+            color="red";
         }
         else if(data.features[i].geometry.coordinates[2]<90&&data.features[i].geometry.coordinates[2]>=70){
-            color="#FF4E11";
+            color="lightgreen";
         }
         else if(data.features[i].geometry.coordinates[2]<70&&data.features[i].geometry.coordinates[2]>=50){
-            color="#FF8E15";
+            color="darkred";
         }
         else if(data.features[i].geometry.coordinates[2]<50&&data.features[i].geometry.coordinates[2]>=30){
-            color="#FAB733";
+            color="pink";
         }
         else if(data.features[i].geometry.coordinates[2]<30&&data.features[i].geometry.coordinates[2]>=10){
-            color="#ACB334";
+            color="yellow";
         }
         else if(data.features[i].geometry.coordinates[2]<10&&data.features[i].geometry.coordinates[2]>=-10){
-            color="#69B34C";
+            color="blue";
         }
         // Create circle markers for each earthquake location
         earthquakeMarkers.push(
@@ -112,13 +112,13 @@ d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/
         
         var div=L.DomUtil.create("div","info legend");
        
-        var categories=["#69B34C","#ACB334","#FAB733","#FF8E15","#FF4E11","#FF0D0D"];
+        var categories=["blue","yellow","pink","darkred","lightgreen","red"];
         var labels=[];
         var legendInfo="<div class=\"labels\">"+"</div>";
         div.innerHTML=legendInfo;
        
             labels.push(
-            "<li>Magnitude</li>"+"<br>"
+            "<li>Categories</li>"+"<br>"
             +"<li style=\"background-color:"+categories[0]+"\"></li>   "+"-10--10"+"<br>"
             +"<li style=\"background-color:"+categories[1]+"\"></li>  "+"10--30"+"<br>"
             +"<li style=\"background-color:"+categories[2]+"\"></li>  "+"30--50"+"<br>"
